@@ -45,7 +45,7 @@ export const OurServices = () => {
             <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1 bg-white">
               <div className="p-5">
                 <div className="mb-5">
-                  <img src={image1} />
+                  <img src={image1} alt="" />
                 </div>
                 <h2 className="font-bold text-xl mb-4">Search doctor</h2>
                 <p className="opacity-50">
