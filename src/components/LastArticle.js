@@ -82,18 +82,16 @@ export const LastArticle = () => {
         </div>
         {/* view all button */}
         <div className="rounded-full border-[#458FF6] w-[180px] flex justify-center border-2 my-10">
-                <button className="text-[#458FF6] p-3 font-bold">
-                  View all
-                </button>
-              </div>
-              {/*Dots*/}
-              <div className="top-end left-0 absolute">
-            <img src={Dots} alt="" />
-              </div>
-              {/*frame*/}
-              <div className="right-0 top-end absolute z-[-10]">
-                <img src={Frame} alt="" />
-              </div>
+          <button className="text-[#458FF6] p-3 font-bold">View all</button>
+        </div>
+        {/*Dots*/}
+        <div className="top-end left-0 absolute">
+          <img src={Dots} alt="" />
+        </div>
+        {/*frame*/}
+        <div className="right-0 top-end absolute z-[-10]">
+          <img src={Frame} alt="" />
+        </div>
       </div>
     </div>
   );

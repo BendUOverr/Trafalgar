@@ -5,6 +5,7 @@ import { HealthcareProv } from "./components/HealthcareProv";
 import { DownloadOurApps } from "./components/DownloadOurApps";
 import { Testimonials } from "./components/Testimonials";
 import { LastArticle } from "./components/LastArticle";
+import { Footer } from "./components/Footer";
 
 export const App = () => {
   return (
@@ -14,7 +15,8 @@ export const App = () => {
       <HealthcareProv />
       <DownloadOurApps />
       <Testimonials /> 
-      <LastArticle />   
+      <LastArticle />
+      <Footer />
     </div>
   );
 };
