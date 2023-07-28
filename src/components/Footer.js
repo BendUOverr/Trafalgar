@@ -3,7 +3,7 @@ import Dots from "../Assets/element.png";
 
 export const Footer = () => {
   return (
-    <div className="flex justify-center h-min mt-20">
+    <div name="about" className="flex justify-center h-min mt-20">
       <div className="bg-gradient-to-l from-[#67C3F3] to-[#5A99F2] w-full h-[435px] flex items-center gap-5 justify-center">
         {/* items div */}
         <div className="h-[250px] mx-20 text-white flex items-center gap-20">
@@ -83,25 +83,25 @@ export const Footer = () => {
         </div>
       </div>
       <div className="absolute right-0 top-[4600px]">
-        <img src={Dots} />
+        <img src={Dots} alt=""/>
       </div>
       <div className="absolute left-0 top-[700px]">
-        <img src={Dots} />
+        <img src={Dots} alt=""/>
       </div>
       <div className="absolute left-0 top-[1500px]">
-        <img src={Dots} />
+        <img src={Dots} alt=""/>
       </div>
       <div className="absolute left-0 top-[3000px]">
-        <img src={Dots} />
+        <img src={Dots} alt=""/>
       </div>
       <div className="absolute right-0 top-[3500px]">
-        <img src={Dots} />
+        <img src={Dots} alt=""/>
       </div>
       <div className="absolute right-0 top-[4000px]">
-        <img src={Dots} />
+        <img src={Dots} alt=""/>
       </div>
       <div className="absolute left-0 top-[5000px]">
-        <img src={Dots} />
+        <img src={Dots} alt=""/>
       </div>
     </div>
   );

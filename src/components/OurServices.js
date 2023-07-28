@@ -10,7 +10,7 @@ import image7 from "../Assets/element.png";
 
 export const OurServices = () => {
   return (
-    <div className="flex justify-center h-fit">
+    <div name="OS" className="flex justify-center h-fit">
       {/* cropped paged div */}
       <div className="max-w-[1200px] w-full">
         {/* Title maindiv*/}
@@ -36,7 +36,7 @@ export const OurServices = () => {
         </div>
         {/* Body */}
         <div className="w-[930px] h-[670px] absolute top-80 left-0 z-[-10]">
-          <img src={Frame} />
+          <img src={Frame} alt=""/>
         </div>
         <div className="flex flex-col h-screen items-center">
           {/* first 3 manage */}
@@ -58,7 +58,7 @@ export const OurServices = () => {
             <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1 bg-white">
               <div className="p-5">
                 <div className="mb-5">
-                  <img src={image2} />
+                  <img src={image2} alt=""/>
                 </div>
                 <h2 className="font-bold text-xl mb-4">Online pharmacy</h2>
                 <p className="opacity-50">
@@ -71,7 +71,7 @@ export const OurServices = () => {
             <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1">
               <div className="p-5">
                 <div className="mb-5">
-                  <img src={image3} />
+                  <img src={image3} alt=""/>
                 </div>
                 <h2 className="font-bold text-xl mb-4">Consultation</h2>
                 <p className="opacity-50">
@@ -81,7 +81,7 @@ export const OurServices = () => {
               </div>
             </div>
             <div className="absolute right-0">
-              <img src={image7} />
+              <img src={image7} alt=""/>
             </div>
           </div>
           {/* second 3 manage */}
@@ -90,7 +90,7 @@ export const OurServices = () => {
             <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
               <div className="p-5">
                 <div className="mb-5">
-                  <img src={image4} />
+                  <img src={image4} alt=""/>
                 </div>
                 <h2 className="font-bold text-xl mb-4">Details info</h2>
                 <p className="opacity-50">
@@ -103,7 +103,7 @@ export const OurServices = () => {
             <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
               <div className="p-5">
                 <div className="mb-5">
-                  <img src={image5} />
+                  <img src={image5} alt=""/>
                 </div>
                 <h2 className="font-bold text-xl mb-4">Emergency care</h2>
                 <p className="opacity-50">
@@ -116,7 +116,7 @@ export const OurServices = () => {
             <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
               <div className="p-5">
                 <div className="mb-5">
-                  <img src={image6} />
+                  <img src={image6} alt=""/>
                 </div>
                 <h2 className="font-bold text-xl mb-4">Tracking</h2>
                 <p className="opacity-50">

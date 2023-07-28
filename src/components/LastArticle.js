@@ -8,7 +8,7 @@ import Dots from "../Assets/element.png";
 
 export const LastArticle = () => {
   return (
-    <div className="flex justify-center h-screen">
+    <div name="article" className="flex justify-center h-screen">
       <div className="max-w-[1200px] w-full flex flex-col items-center">
         {/* title div */}
         <div className="m-5">

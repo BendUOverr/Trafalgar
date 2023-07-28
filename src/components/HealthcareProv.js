@@ -4,13 +4,13 @@ import Dotss from "../Assets/element.png";
 
 export const HealthcareProv = () => {
   return (
-    <div className="flex justify-center h-screen items-center">
+    <div name="ht" className="flex justify-center h-screen items-center">
       <div className="max-w-[1400px] w-full ">
         <div className="flex gap-10">
           {/* img */}
           <div>
             <div>
-              <img src={image8} />
+              <img src={image8} alt=""/>
             </div>
           </div>
           <div className="flex items-center pl-20">
@@ -32,7 +32,7 @@ export const HealthcareProv = () => {
           </div>
         </div>
         <div className="absolute right-0">
-          <img src={Dotss} />
+          <img src={Dotss} alt=""/>
         </div>
       </div>
     </div>

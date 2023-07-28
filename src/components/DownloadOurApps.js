@@ -4,7 +4,7 @@ import Vector from "../Assets/Vector.png";
 
 export const DownloadOurApps = () => {
   return (
-    <div className="flex justify-center h-screen items-center">
+    <div name="app" className="flex justify-center h-screen items-center">
       <div className="max-w-[1400px] w-full ">
         <div className="flex gap-10">
           <div className="flex items-center pl-20">
