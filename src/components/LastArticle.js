@@ -8,16 +8,17 @@ import Dots from "../Assets/element.png";
 
 export const LastArticle = () => {
   return (
-    <div name="article" className="flex justify-center h-screen">
-      <div className="max-w-[1200px] w-full flex flex-col items-center">
+    <div name="article" className="flex justify-center lg:h-screen">
+      <div className="w-full flex flex-col items-center p-4">
         {/* title div */}
         <div className="m-5">
           <h1 className="font-bold text-3xl">Check out our latest article</h1>
         </div>
         {/* 3 element div */}
-        <div className="flex mt-8">
+        <div className="md:flex flex-wrap mt-8 justify-center">
           {/* first item */}
-          <div className="flex flex-col w-[350px] h-[512px] mx-6 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl gap-3">
+          <div className="flex flex-col w-full md:w-[350px] h-[512px] mx-2 md:mx-6 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl gap-3">
+            {/* ...content... */}
             <div>
               <img className="rounded-t-3xl" src={Dis} alt="" />
             </div>
@@ -38,7 +39,8 @@ export const LastArticle = () => {
             </div>
           </div>
           {/* second item */}
-          <div className="flex flex-col w-[350px] h-[512px] mx-6 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl gap-3 bg-white">
+          <div className="flex flex-col w-full md:w-[350px] h-[512px] mx-2 md:mx-6 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl gap-3 bg-white">
+            {/* ...content... */}
             <div>
               <img className="rounded-t-3xl" src={Herbal} alt="" />
             </div>
@@ -59,7 +61,8 @@ export const LastArticle = () => {
             </div>
           </div>
           {/* third item */}
-          <div className="flex flex-col w-[350px] h-[512px] mx-6 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl gap-3 bg-white">
+          <div className="flex flex-col w-full md:w-[350px] h-[512px] mx-2 md:mx-6 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl gap-3 bg-white">
+            {/* ...content... */}
             <div>
               <img className="rounded-t-3xl" src={Mask} alt="" />
             </div>
@@ -84,15 +87,18 @@ export const LastArticle = () => {
         <div className="rounded-full border-[#458FF6] w-[180px] flex justify-center border-2 my-10">
           <button className="text-[#458FF6] p-3 font-bold">View all</button>
         </div>
-        {/*Dots*/}
-        <div className="top-end left-0 absolute">
-          <img src={Dots} alt="" />
-        </div>
-        {/*frame*/}
-        <div className="right-0 top-end absolute z-[-10]">
-          <img src={Frame} alt="" />
-        </div>
       </div>
+      {/* Dots */}
+      <div className="top-end left-0 absolute">
+        <img src={Dots} alt="" />
+      </div>
+      {/* Frame */}
+      <div className="right-0 top-end absolute z-[-10]">
+        <img src={Frame} alt="" />
+      </div>
+      
     </div>
   );
 };
+
+export default LastArticle;

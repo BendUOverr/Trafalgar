@@ -10,21 +10,21 @@ import image7 from "../Assets/element.png";
 
 export const OurServices = () => {
   return (
-    <div name="OS" className="flex justify-center h-fit">
+    <div name="OS" className="flex justify-center lg:h-screen h-[2000px]">
       {/* cropped paged div */}
       <div className="max-w-[1200px] w-full">
         {/* Title maindiv*/}
-        <div className="flex justify-center pt-5">
+        <div className="sm:flex sm:justify-center sm:pt-5 flex mt-20">
           {/* Title div */}
-          <div className="flex justify-center w-[952px] h-[130px]">
+          <div className="sm:flex sm:justify-center sm:w-[952px] sm:h-[130px] my-10 flex justify-center">
             {/* h1 div */}
-            <div className="flex justify-center absolute">
+            <div className="sm:flex sm:justify-center absolute">
               <h1 className="font-bold text-3xl border-b-2 border-black pb-5">
                 Our services
               </h1>
             </div>
             {/* p div*/}
-            <div className="flex justify-center items-end">
+            <div className="sm:flex sm:justify-center sm:items-end mt-20 sm:mx-20">
               <p className="opacity-50">
                 We provide to you the best choiches for you. Adjust it to your
                 health needs and make sure your undergo treatment with our
@@ -35,14 +35,14 @@ export const OurServices = () => {
           </div>
         </div>
         {/* Body */}
-        <div className="w-[930px] h-[670px] absolute top-80 left-0 z-[-10]">
+        <div className="sm:w-[930px] sm:h-[670px] absolute sm:top-80 sm:left-0 z-[-10] top-90 left-0">
           <img src={Frame} alt=""/>
         </div>
-        <div className="flex flex-col h-screen items-center">
+        <div className="lg:flex lg:flex-col h-screen lg:items-center flex-col justify-center">
           {/* first 3 manage */}
-          <div className="flex justify-center items-center max-h-[300px] w-full pt-10">
+          <div className="lg:flex lg:justify-center lg:items-center lg:max-h-[300px] lg:w-full pt-10">
             {/* item 1 */}
-            <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1 bg-white">
+            <div className="md:w-[90%] lg:w-[300px] lg:h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1 bg-white">
               <div className="p-5">
                 <div className="mb-5">
                   <img src={image1} alt="" />
@@ -55,7 +55,7 @@ export const OurServices = () => {
               </div>
             </div>
             {/* item 2 */}
-            <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1 bg-white">
+            <div className="md:w-[90%] lg:w-[300px] lg:h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1 bg-white">
               <div className="p-5">
                 <div className="mb-5">
                   <img src={image2} alt=""/>
@@ -68,7 +68,7 @@ export const OurServices = () => {
               </div>
             </div>
             {/* item 3 */}
-            <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1">
+            <div className="md:w-[90%] lg:w-[300px] lg:h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-1">
               <div className="p-5">
                 <div className="mb-5">
                   <img src={image3} alt=""/>
@@ -85,9 +85,9 @@ export const OurServices = () => {
             </div>
           </div>
           {/* second 3 manage */}
-          <div className="flex justify-center items-center">
+          <div className="lg:flex lg:justify-center lg:items-center">
             {/* item 4 */}
-            <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
+            <div className="md:w-[90%] lg:w-[300px] lg:h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
               <div className="p-5">
                 <div className="mb-5">
                   <img src={image4} alt=""/>
@@ -100,7 +100,7 @@ export const OurServices = () => {
               </div>
             </div>
             {/* item 5 */}
-            <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
+            <div className="md:w-[90%] lg:w-[300px] lg:h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
               <div className="p-5">
                 <div className="mb-5">
                   <img src={image5} alt=""/>
@@ -113,7 +113,7 @@ export const OurServices = () => {
               </div>
             </div>
             {/* item 6 */}
-            <div className="w-[300px] h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
+            <div className="md:w-[90%] lg:w-[300px] lg:h-[270px] m-10 shadow-lg shadow-[#e5e9f6] hover:scale-110 duration-500 rounded-3xl mt-0">
               <div className="p-5">
                 <div className="mb-5">
                   <img src={image6} alt=""/>
@@ -125,7 +125,7 @@ export const OurServices = () => {
               </div>
             </div>
           </div>
-          <div className="rounded-full border-[#458FF6] w-[180px] flex justify-center border-2">
+          <div className="rounded-full border-[#458FF6] w-[180px] flex justify-center border-2 ml-20">
             <button className="text-[#458FF6] p-3 font-bold">Learn more</button>
           </div>
         </div>

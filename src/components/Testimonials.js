@@ -1,40 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import right from "../Assets/arrowright.svg";
 import { TestimonialCard } from "./TestimonialCard";
 import Man from "../Assets/manprofile.png";
 import Woman from "../Assets/womanprofile.png";
 
 export const Testimonials = (props) => {
-  const [currentPos, setCurrentPos] =useState("0%");
   const [currentCard, setCurrentCard] = useState(0);
   const items = [
     {
-      name: "Luka",
+      name: "Enuqi",
       avatar: Man,
       comment:
         "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”",
     },
     {
-      name: "Tamcho",
+      name: "Kate",
       avatar: Woman,
-      comment: "me miyvars luka",
+      comment:
+        "Highly impressed with the hospital's top-notch facilities and compassionate staff. The doctors demonstrated exceptional expertise and took the time to address all my concerns. A truly positive healthcare experience",
     },
     {
-      name: "Maka",
+      name: "Lucy",
       avatar: Woman,
-      comment: "me miyvars dato",
+      comment:
+        "Average experience at this hospital. The doctors were competent, but the overall atmosphere felt a bit impersonal. The facilities could use some modernization to enhance patient comfort and convenience",
     },
     {
-      name: "dato",
-      avatar: Woman,
-      comment: "me miyvars luka",
+      name: "Luka",
+      avatar: Man,
+      comment:
+        "Regrettably disappointed with my visit to this hospital. The doctors seemed rushed and didn't thoroughly explain my condition. Additionally, the facilities were outdated and in need of improvement. Definitely wouldn't recommend this place",
     },
   ];
-  useEffect(() => {
-    const cardCalculation = currentCard*-100+"%";
-    console.log(cardCalculation);
-    setCurrentPos(cardCalculation);
-  }, [currentCard]);
   const moveRight = () => {
     if (currentCard + 1 >= items.length) {
       setCurrentCard(0);
@@ -54,13 +51,15 @@ export const Testimonials = (props) => {
     <div name="testimonial" className="flex justify-center h-screen">
       <div className="max-w-[1200px] w-full flex justify-center items-center flex-col">
         {/* Blue Window */}
-        <div className="rounded-3xl">
+        <div className="rounded-3xl overflow-hidden">
           <div
-            className={`flex w-[1120px] h-[425px] translate-x-[${currentPos}] duration-300`}
+            className={`w-[400px] flex md:w-[800px] lg:w-[1120px] h-[425px] duration-300`}
+            style={{ transform: `translateX(-${currentCard * 100}%)` }}
           >
             {items.map((item) => {
               return (
                 <TestimonialCard
+                  key={item.name}
                   name={item.name}
                   avatar={item.avatar}
                   comment={item.comment}
@@ -80,13 +79,15 @@ export const Testimonials = (props) => {
           {items.map((item, index) => {
             if (index === currentCard) {
               return (
-                <div className="w-[10px] h-[10px] rounded-full bg-[#1274fe] scale-150">
-                  
-                </div>
+                <div
+                  key={index}
+                  className="w-[10px] h-[10px] rounded-full bg-[#1274fe] scale-150"
+                ></div>
               );
             } else {
               return (
                 <div
+                  key={index}
                   onClick={() => {
                     setCurrentCard(index);
                   }}

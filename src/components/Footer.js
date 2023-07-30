@@ -4,11 +4,11 @@ import Dots from "../Assets/element.png";
 export const Footer = () => {
   return (
     <div name="about" className="flex justify-center h-min mt-20">
-      <div className="bg-gradient-to-l from-[#67C3F3] to-[#5A99F2] w-full h-[435px] flex items-center gap-5 justify-center">
+      <div className="bg-gradient-to-l from-[#67C3F3] to-[#5A99F2] w-full lg:h-[435px] lg:flex lg:items-center gap-5 lg:justify-center">
         {/* items div */}
-        <div className="h-[250px] mx-20 text-white flex items-center gap-20">
+        <div className="lg:h-[250px] mx-20 text-white lg:flex lg:items-center gap-20 flex-wrap sm:h-[500px]">
           {/* first col div */}
-          <div className="flex flex-col gap-8 max-w-[400px] w-full mr-20">
+          <div className="flex flex-wrap gap-8 max-w-[400px] w-full mr-20">
             {/* taraflgar icon div */}
             <div className="flex items-center gap-2">
               <p className="bg-white w-[40px] h-[40px] flex items-center justify-center rounded-full font-bold text-[26px] text-[#458FF6]">
@@ -27,7 +27,7 @@ export const Footer = () => {
             </div>
           </div>
           {/* Second col div */}
-          <div className="flex flex-col gap-2 mr-20">
+          <div className="flex flex-col gap-2 lg:mr-20 mt-5">
             <div>
               <h4 className="font-bold mb-3 text-base">Company</h4>
             </div>
@@ -45,7 +45,7 @@ export const Footer = () => {
             </div>
           </div>
           {/* Third col div */}
-          <div className="flex flex-col gap-2 mr-20">
+          <div className="flex flex-col gap-2 mr-20 mt-5">
             <div>
               <h4 className="font-bold mb-3 text-base">Region</h4>
             </div>
@@ -63,7 +63,7 @@ export const Footer = () => {
             </div>
           </div>
           {/* Fourth col div */}
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 mt-5">
             <div>
               <h4 className="font-bold mb-3 text-base">Help</h4>
             </div>
